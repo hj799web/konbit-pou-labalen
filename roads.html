@@ -12,8 +12,8 @@
   <link rel="alternate" hreflang="ht" href="https://hj799web.github.io/konbit-pou-labalen/roads-ht.html">
   <link rel="alternate" hreflang="fr" href="https://hj799web.github.io/konbit-pou-labalen/roads-fr.html">
   <title>Roads for Labalèn · Konbit Pou Labalèn</title>
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="interactions.js"></script>
+  <link rel="stylesheet" href="styles.css?v=202611-photo-journal">
+  <script defer src="interactions.js?v=202611-photo-journal"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -45,23 +45,28 @@
       <h1>Roads for Labalèn</h1>
       <p>Better road access matters for children going to school, families making daily trips, and residents moving materials through Labalèn.</p>
     </section>
-    <nav class="project-links" aria-label="Roads for Labalèn">
-      <a href="#fieldwork">Phase 1 · Morne Charmit</a>
-      <a href="#school-road">Phase 2 · Planned</a>
+    <nav class="road-phases" aria-label="Roads for Labalèn">
+      <a href="#fieldwork"><span>Phase 1 · Morne Charmit</span><strong>Morne Charmit field journal</strong></a>
+      <a href="#school-road"><span>Phase 2 · Planned</span><strong>School-area road plan</strong></a>
     </nav>
     <section class="journal content" id="fieldwork" aria-labelledby="journal-title">
       <div class="section-intro">
         <p class="kicker">Phase 1 · Morne Charmit</p>
         <h2 id="journal-title">From the field</h2>
         <p>The November 2026 project update reported that the central concrete strip, measuring 82 metres long and 3 metres wide, was complete. The photos show the strip and work along the sides.</p>
-        <p>Choose a date to see what was happening on the road.</p>
+        <p>Choose a date to browse the photos.</p>
       </div>
       <div class="date-selector" role="group" aria-label="Photo dates" hidden>
-        <button type="button" data-day="0" aria-pressed="false"><time datetime="2026-11-21">Nov. 21</time><span>Roadside preparation</span></button>
-        <button type="button" data-day="1" aria-pressed="false"><time datetime="2026-11-24">Nov. 24</time><span>Materials and concrete</span></button>
-        <button type="button" data-day="2" aria-pressed="true"><time datetime="2026-11-25">Nov. 25</time><span>Work on the bend</span></button>
+        <button type="button" data-day="2026-11-20" aria-pressed="false"><time datetime="2026-11-20">Nov. 20</time><span>Work along the road</span></button>
+        <button type="button" data-day="2026-11-21" aria-pressed="false"><time datetime="2026-11-21">Nov. 21</time><span>Roadside preparation</span></button>
+        <button type="button" data-day="2026-11-24" aria-pressed="false"><time datetime="2026-11-24">Nov. 24</time><span>Materials and concrete</span></button>
+        <button type="button" data-day="2026-11-25" aria-pressed="true"><time datetime="2026-11-25">Nov. 25</time><span>Work on the bend</span></button>
       </div>
-      <div class="journal-layout">
+      <div class="layout-switch" role="group" aria-label="Photo layout" hidden>
+        <button type="button" data-layout="story" aria-pressed="true" aria-controls="photo-story">Photo story</button>
+        <button type="button" data-layout="grid" aria-pressed="false" aria-controls="photo-grid">Photo grid</button>
+      </div>
+      <div class="journal-layout" id="photo-story">
         <figure class="photo-story">
           <a href="nov-25-bend.jpg" id="open-photo" aria-label="Open full photo">
             <img id="story-image" src="nov-25-bend.jpg" alt="The crew works along the roadside bend." width="810" height="1080" loading="lazy">
@@ -79,7 +84,8 @@
           <span class="photo-count" id="photo-count" aria-live="polite"></span>
         </div>
       </div>
-      <script type="application/json" id="journal-data">[{"date":"November 21, 2026","title":"Preparing the roadside","summary":"Workers cleared the shoulder beside the central concrete strip.","photos":[{"file":"nov-21-crew.jpg","caption":"Workers clear the roadside shoulder."},{"file":"nov-21-shoulder.jpg","caption":"The roadside shoulder beside the central strip."}]},{"date":"November 24, 2026","title":"Working with gravel and concrete","summary":"The team prepared gravel and poured concrete along the roadside.","photos":[{"file":"nov-24-materials.jpg","caption":"Workers prepare gravel beside a pickup."},{"file":"nov-24-concrete.jpg","caption":"Fresh concrete in wooden forms."}]},{"date":"November 25, 2026","title":"Work on the bend","summary":"The crew worked beside the existing concrete strip and shaped the roadside concrete.","photos":[{"file":"nov-25-bend.jpg","caption":"The crew works along the roadside bend."},{"file":"nov-25-roadside.jpg","caption":"Workers shape the concrete along the roadside."}]}]</script>
+      <ul class="photo-grid" id="photo-grid" aria-label="Photos from the selected date" hidden></ul>
+      <script type="application/json" id="journal-data">[{"id":"2026-11-20","shortDate":"Nov. 20","date":"November 20, 2026","title":"Work along the road","summary":"Photos from along the concrete strip and the unpaved shoulder.","photos":[{"file":"nov-20-work-crew.jpg","caption":"Crew members work on a rough section of the road."},{"file":"nov-20-road-view.jpg","caption":"The concrete strip beside a rocky shoulder."},{"file":"nov-20-clearing.jpg","caption":"Workers clear branches and debris beside the road."}]},{"id":"2026-11-21","shortDate":"Nov. 21","label":"Roadside preparation","date":"November 21, 2026","title":"Preparing the roadside","summary":"Workers cleared the shoulder beside the central concrete strip.","photos":[{"file":"nov-21-crew.jpg","caption":"Workers clear the roadside shoulder."},{"file":"nov-21-shoulder.jpg","caption":"The roadside shoulder beside the central strip."},{"file":"nov-21-wheelbarrows.jpg","caption":"The crew works beside a wheelbarrow."},{"file":"nov-21-hillside.jpg","caption":"Workers along a sunny stretch of road bordered by trees."}]},{"id":"2026-11-24","shortDate":"Nov. 24","label":"Materials and concrete","date":"November 24, 2026","title":"Working with gravel and concrete","summary":"The team prepared gravel and poured concrete along the roadside.","photos":[{"file":"nov-24-materials.jpg","caption":"Workers prepare gravel beside a pickup."},{"file":"nov-24-concrete.jpg","caption":"Fresh concrete in wooden forms."}]},{"id":"2026-11-25","shortDate":"Nov. 25","label":"Work on the bend","date":"November 25, 2026","title":"Work on the bend","summary":"The crew worked beside the existing concrete strip and shaped the roadside concrete.","photos":[{"file":"nov-25-bend.jpg","caption":"The crew works along the roadside bend."},{"file":"nov-25-roadside.jpg","caption":"Workers shape the concrete along the roadside."},{"file":"nov-25-drainage-work.jpg","caption":"Workers build a concrete channel along the roadside."},{"file":"nov-25-materials.jpg","caption":"A pickup and piles of materials beside the road."}]}]</script>
     </section>
     <section class="next content" id="school-road" aria-labelledby="plan-title">
       <div>

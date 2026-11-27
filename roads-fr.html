@@ -12,8 +12,8 @@
   <link rel="alternate" hreflang="ht" href="https://hj799web.github.io/konbit-pou-labalen/roads-ht.html">
   <link rel="alternate" hreflang="fr" href="https://hj799web.github.io/konbit-pou-labalen/roads-fr.html">
   <title>Des routes pour Labalèn · Konbit Pou Labalèn</title>
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="interactions.js"></script>
+  <link rel="stylesheet" href="styles.css?v=202611-photo-journal">
+  <script defer src="interactions.js?v=202611-photo-journal"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
@@ -45,23 +45,28 @@
       <h1>Des routes pour Labalèn</h1>
       <p>Un meilleur accès routier facilite le trajet des enfants vers l’école, les déplacements quotidiens des familles et le transport des matériaux.</p>
     </section>
-    <nav class="project-links" aria-label="Des routes pour Labalèn">
-      <a href="#fieldwork">Phase 1 · Morne Charmit</a>
-      <a href="#school-road">Phase 2 · Travaux prévus</a>
+    <nav class="road-phases" aria-label="Des routes pour Labalèn">
+      <a href="#fieldwork"><span>Phase 1 · Morne Charmit</span><strong>Journal de terrain de Morne Charmit</strong></a>
+      <a href="#school-road"><span>Phase 2 · Travaux prévus</span><strong>Projet de route près de l’école</strong></a>
     </nav>
     <section class="journal content" id="fieldwork" aria-labelledby="journal-title">
       <div class="section-intro">
         <p class="kicker">Phase 1 · Morne Charmit</p>
         <h2 id="journal-title">Sur le terrain</h2>
         <p>Selon le bilan de novembre 2026, la bande centrale en béton, longue de 82 mètres et large de 3 mètres, était terminée. Les photos montrent cette bande et les travaux d’accotement.</p>
-        <p>Choisissez une date pour découvrir les travaux de cette journée.</p>
+        <p>Choisissez une date pour parcourir les photos.</p>
       </div>
       <div class="date-selector" role="group" aria-label="Dates des photos" hidden>
-        <button type="button" data-day="0" aria-pressed="false"><time datetime="2026-11-21">21 nov.</time><span>Préparation des abords</span></button>
-        <button type="button" data-day="1" aria-pressed="false"><time datetime="2026-11-24">24 nov.</time><span>Matériaux et béton</span></button>
-        <button type="button" data-day="2" aria-pressed="true"><time datetime="2026-11-25">25 nov.</time><span>Travaux dans le virage</span></button>
+        <button type="button" data-day="2026-11-20" aria-pressed="false"><time datetime="2026-11-20">20 nov.</time><span>Travaux le long de la route</span></button>
+        <button type="button" data-day="2026-11-21" aria-pressed="false"><time datetime="2026-11-21">21 nov.</time><span>Préparation des abords</span></button>
+        <button type="button" data-day="2026-11-24" aria-pressed="false"><time datetime="2026-11-24">24 nov.</time><span>Matériaux et béton</span></button>
+        <button type="button" data-day="2026-11-25" aria-pressed="true"><time datetime="2026-11-25">25 nov.</time><span>Travaux dans le virage</span></button>
       </div>
-      <div class="journal-layout">
+      <div class="layout-switch" role="group" aria-label="Mode d’affichage" hidden>
+        <button type="button" data-layout="story" aria-pressed="true" aria-controls="photo-story">Récit en photos</button>
+        <button type="button" data-layout="grid" aria-pressed="false" aria-controls="photo-grid">Grille de photos</button>
+      </div>
+      <div class="journal-layout" id="photo-story">
         <figure class="photo-story">
           <a href="nov-25-bend.jpg" id="open-photo" aria-label="Agrandir la photo">
             <img id="story-image" src="nov-25-bend.jpg" alt="L’équipe travaille dans le virage." width="810" height="1080" loading="lazy">
@@ -79,7 +84,8 @@
           <span class="photo-count" id="photo-count" aria-live="polite"></span>
         </div>
       </div>
-      <script type="application/json" id="journal-data">[{"date":"21 novembre 2026","title":"Préparer les abords de la route","summary":"L’équipe a dégagé l’accotement le long de la bande centrale bétonnée.","photos":[{"file":"nov-21-crew.jpg","caption":"Des travailleurs dégagent l’accotement."},{"file":"nov-21-shoulder.jpg","caption":"L’accotement longe la bande centrale bétonnée."}]},{"date":"24 novembre 2026","title":"Préparer le gravier et couler le béton","summary":"L’équipe a préparé le gravier et coulé du béton en bordure de route.","photos":[{"file":"nov-24-materials.jpg","caption":"Des travailleurs préparent le gravier près d’une camionnette."},{"file":"nov-24-concrete.jpg","caption":"Béton frais entre les planches de coffrage."}]},{"date":"25 novembre 2026","title":"Les travaux dans le virage","summary":"L’équipe a travaillé le long de la bande centrale et mis en forme le béton en bordure de route.","photos":[{"file":"nov-25-bend.jpg","caption":"L’équipe travaille dans le virage."},{"file":"nov-25-roadside.jpg","caption":"Des travailleurs mettent en forme le béton en bordure de route."}]}]</script>
+      <ul class="photo-grid" id="photo-grid" aria-label="Photos de la date sélectionnée" hidden></ul>
+      <script type="application/json" id="journal-data">[{"id":"2026-11-20","shortDate":"20 nov.","date":"20 novembre 2026","title":"Travaux le long de la route","summary":"Photos de la bande bétonnée et de l’accotement en terre.","photos":[{"file":"nov-20-work-crew.jpg","caption":"L’équipe travaille sur une partie rocailleuse de la route."},{"file":"nov-20-road-view.jpg","caption":"La bande bétonnée longe un accotement pierreux."},{"file":"nov-20-clearing.jpg","caption":"Des travailleurs dégagent des branches et des débris en bordure de route."}]},{"id":"2026-11-21","shortDate":"21 nov.","label":"Préparation des abords","date":"21 novembre 2026","title":"Préparer les abords de la route","summary":"L’équipe a dégagé l’accotement le long de la bande centrale bétonnée.","photos":[{"file":"nov-21-crew.jpg","caption":"Des travailleurs dégagent l’accotement."},{"file":"nov-21-shoulder.jpg","caption":"L’accotement longe la bande centrale bétonnée."},{"file":"nov-21-wheelbarrows.jpg","caption":"L’équipe travaille près d’une brouette."},{"file":"nov-21-hillside.jpg","caption":"Des travailleurs sur un tronçon ensoleillé bordé d’arbres."}]},{"id":"2026-11-24","shortDate":"24 nov.","label":"Matériaux et béton","date":"24 novembre 2026","title":"Préparer le gravier et couler le béton","summary":"L’équipe a préparé le gravier et coulé du béton en bordure de route.","photos":[{"file":"nov-24-materials.jpg","caption":"Des travailleurs préparent le gravier près d’une camionnette."},{"file":"nov-24-concrete.jpg","caption":"Béton frais entre les planches de coffrage."}]},{"id":"2026-11-25","shortDate":"25 nov.","label":"Travaux dans le virage","date":"25 novembre 2026","title":"Les travaux dans le virage","summary":"L’équipe a travaillé le long de la bande centrale et mis en forme le béton en bordure de route.","photos":[{"file":"nov-25-bend.jpg","caption":"L’équipe travaille dans le virage."},{"file":"nov-25-roadside.jpg","caption":"Des travailleurs mettent en forme le béton en bordure de route."},{"file":"nov-25-drainage-work.jpg","caption":"Des travailleurs aménagent une rigole en béton le long de la route."},{"file":"nov-25-materials.jpg","caption":"Une camionnette et des tas de matériaux en bordure de route."}]}]</script>
     </section>
     <section class="next content" id="school-road" aria-labelledby="plan-title">
       <div>

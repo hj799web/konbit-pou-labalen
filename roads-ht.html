@@ -12,8 +12,8 @@
   <link rel="alternate" hreflang="ht" href="https://hj799web.github.io/konbit-pou-labalen/roads-ht.html">
   <link rel="alternate" hreflang="fr" href="https://hj799web.github.io/konbit-pou-labalen/roads-fr.html">
   <title>Wout pou Labalèn · Konbit Pou Labalèn</title>
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="interactions.js"></script>
+  <link rel="stylesheet" href="styles.css?v=202611-photo-journal">
+  <script defer src="interactions.js?v=202611-photo-journal"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Ale nan kontni an</a>
@@ -45,23 +45,28 @@
       <h1>Wout pou Labalèn</h1>
       <p>Pi bon wout ede timoun ale lekòl, fanmi fè deplasman yo chak jou epi moun nan kominote a transpòte materyèl.</p>
     </section>
-    <nav class="project-links" aria-label="Wout pou Labalèn">
-      <a href="#fieldwork">Faz 1 · Mòn Chamit</a>
-      <a href="#school-road">Faz 2 · Travay ki prevwa</a>
+    <nav class="road-phases" aria-label="Wout pou Labalèn">
+      <a href="#fieldwork"><span>Faz 1 · Mòn Chamit</span><strong>Nouvèl sou travay nan Mòn Chamit</strong></a>
+      <a href="#school-road"><span>Faz 2 · Travay ki prevwa</span><strong>Plan pou wout toupre lekòl la</strong></a>
     </nav>
     <section class="journal content" id="fieldwork" aria-labelledby="journal-title">
       <div class="section-intro">
         <p class="kicker">Faz 1 · Mòn Chamit</p>
         <h2 id="journal-title">Nouvèl sou teren an</h2>
         <p>Dapre dènye nouvèl sou pwojè a nan novanm 2026, pati santral wout la, ki mezire 82 mèt longè ak 3 mèt lajè, te fin betonnen. Foto yo montre pati sa a ak travay sou kote wout la.</p>
-        <p>Chwazi yon dat pou wè ki travay ki t ap fèt sou wout la.</p>
+        <p>Chwazi yon dat pou gade foto yo.</p>
       </div>
       <div class="date-selector" role="group" aria-label="Dat foto yo" hidden>
-        <button type="button" data-day="0" aria-pressed="false"><time datetime="2026-11-21">21 nov.</time><span>Preparasyon bò wout la</span></button>
-        <button type="button" data-day="1" aria-pressed="false"><time datetime="2026-11-24">24 nov.</time><span>Materyèl ak beton</span></button>
-        <button type="button" data-day="2" aria-pressed="true"><time datetime="2026-11-25">25 nov.</time><span>Travay nan koub la</span></button>
+        <button type="button" data-day="2026-11-20" aria-pressed="false"><time datetime="2026-11-20">20 nov.</time><span>Travay sou wout la</span></button>
+        <button type="button" data-day="2026-11-21" aria-pressed="false"><time datetime="2026-11-21">21 nov.</time><span>Preparasyon bò wout la</span></button>
+        <button type="button" data-day="2026-11-24" aria-pressed="false"><time datetime="2026-11-24">24 nov.</time><span>Materyèl ak beton</span></button>
+        <button type="button" data-day="2026-11-25" aria-pressed="true"><time datetime="2026-11-25">25 nov.</time><span>Travay nan koub la</span></button>
       </div>
-      <div class="journal-layout">
+      <div class="layout-switch" role="group" aria-label="Fason foto yo parèt" hidden>
+        <button type="button" data-layout="story" aria-pressed="true" aria-controls="photo-story">Foto ak istwa</button>
+        <button type="button" data-layout="grid" aria-pressed="false" aria-controls="photo-grid">Tout foto pou dat la</button>
+      </div>
+      <div class="journal-layout" id="photo-story">
         <figure class="photo-story">
           <a href="nov-25-bend.jpg" id="open-photo" aria-label="Gade foto a an gran">
             <img id="story-image" src="nov-25-bend.jpg" alt="Ekip la ap travay nan yon koub nan wout la." width="810" height="1080" loading="lazy">
@@ -79,7 +84,8 @@
           <span class="photo-count" id="photo-count" aria-live="polite"></span>
         </div>
       </div>
-      <script type="application/json" id="journal-data">[{"date":"21 novanm 2026","title":"Preparasyon bò wout la","summary":"Travayè yo netwaye bò pati santral wout la ki deja betonnen.","photos":[{"file":"nov-21-crew.jpg","caption":"Travayè ap netwaye bò wout la."},{"file":"nov-21-shoulder.jpg","caption":"Bò wout la ak pati santral ki betonnen an."}]},{"date":"24 novanm 2026","title":"Preparasyon materyèl ak beton","summary":"Ekip la prepare gravye epi koule beton sou bò wout la.","photos":[{"file":"nov-24-materials.jpg","caption":"Travayè ap prepare gravye bò yon kamyonèt."},{"file":"nov-24-concrete.jpg","caption":"Beton ki fèk koule ant planch yo."}]},{"date":"25 novanm 2026","title":"Travay nan koub la","summary":"Ekip la travay bò pati santral la epi li bay beton sou bò wout la fòm.","photos":[{"file":"nov-25-bend.jpg","caption":"Ekip la ap travay nan yon koub nan wout la."},{"file":"nov-25-roadside.jpg","caption":"Travayè ap bay beton bò wout la fòm."}]}]</script>
+      <ul class="photo-grid" id="photo-grid" aria-label="Foto pou dat ou chwazi a" hidden></ul>
+      <script type="application/json" id="journal-data">[{"id":"2026-11-20","shortDate":"20 nov.","date":"20 novanm 2026","title":"Travay sou wout la","summary":"Foto bò pati ki betonnen an ak sou rebò wout ki poko betonnen an.","photos":[{"file":"nov-20-work-crew.jpg","caption":"Ekip la ap travay sou yon pati wout ki gen anpil wòch."},{"file":"nov-20-road-view.jpg","caption":"Pati ki betonnen an bò yon rebò wout ki gen anpil wòch."},{"file":"nov-20-clearing.jpg","caption":"Travayè yo retire branch ak debri bò wout la."}]},{"id":"2026-11-21","shortDate":"21 nov.","label":"Preparasyon bò wout la","date":"21 novanm 2026","title":"Preparasyon bò wout la","summary":"Travayè yo netwaye bò pati santral wout la ki deja betonnen.","photos":[{"file":"nov-21-crew.jpg","caption":"Travayè ap netwaye bò wout la."},{"file":"nov-21-shoulder.jpg","caption":"Bò wout la ak pati santral ki betonnen an."},{"file":"nov-21-wheelbarrows.jpg","caption":"Ekip la ap travay bò yon bourèt."},{"file":"nov-21-hillside.jpg","caption":"Travayè bò yon pati wout nan solèy la, ak pyebwa sou kote."}]},{"id":"2026-11-24","shortDate":"24 nov.","label":"Materyèl ak beton","date":"24 novanm 2026","title":"Preparasyon materyèl ak beton","summary":"Ekip la prepare gravye epi koule beton sou bò wout la.","photos":[{"file":"nov-24-materials.jpg","caption":"Travayè ap prepare gravye bò yon kamyonèt."},{"file":"nov-24-concrete.jpg","caption":"Beton ki fèk koule ant planch yo."}]},{"id":"2026-11-25","shortDate":"25 nov.","label":"Travay nan koub la","date":"25 novanm 2026","title":"Travay nan koub la","summary":"Ekip la travay bò pati santral la epi li bay beton sou bò wout la fòm.","photos":[{"file":"nov-25-bend.jpg","caption":"Ekip la ap travay nan yon koub nan wout la."},{"file":"nov-25-roadside.jpg","caption":"Travayè ap bay beton bò wout la fòm."},{"file":"nov-25-drainage-work.jpg","caption":"Travayè ap fè yon rigòl beton bò wout la."},{"file":"nov-25-materials.jpg","caption":"Yon kamyonèt ak pil materyèl bò wout la."}]}]</script>
     </section>
     <section class="next content" id="school-road" aria-labelledby="plan-title">
       <div>
