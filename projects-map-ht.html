@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ht">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dekouvri Labalèn ak zòn ki ozalantou yo. Chwazi yon kote sou kat la pou w wè detay sou pwojè yo oswa pou w konnen ki kote l ye.">
+  <meta name="theme-color" content="#1d3d19">
+  <meta property="og:title" content="Kat pwojè yo · Konbit Pou Labalèn">
+  <meta property="og:description" content="Dekouvri Labalèn ak zòn ki ozalantou yo. Chwazi yon kote sou kat la pou w wè detay sou pwojè yo oswa pou w konnen ki kote l ye.">
+  <meta property="og:image" content="https://hj799web.github.io/konbit-pou-labalen/nov-25-bend.jpg">
+  <link rel="alternate" hreflang="en" href="https://hj799web.github.io/konbit-pou-labalen/projects-map.html">
+  <link rel="alternate" hreflang="ht" href="https://hj799web.github.io/konbit-pou-labalen/projects-map-ht.html">
+  <link rel="alternate" hreflang="fr" href="https://hj799web.github.io/konbit-pou-labalen/projects-map-fr.html">
+  <title>Kat pwojè yo · Konbit Pou Labalèn</title>
+  <link rel="stylesheet" href="styles.css?v=project-map">
+  <script defer src="interactions.js"></script>
+  
+  <link rel="stylesheet" href="leaflet-1.9.4.css">
+  <link rel="stylesheet" href="project-map.css">
+  <script defer src="leaflet-1.9.4.js"></script>
+  <script defer src="project-map.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Ale nan kontni an</a>
+  <header class="site-header">
+    <div class="wrap masthead">
+      <a href="index-ht.html" class="brand"><img src="labalen-horizontal.png" alt="Konbit Pou Labalèn" width="2172" height="724"></a>
+      <nav class="main-nav" aria-label="Meni prensipal">
+        <a href="index-ht.html">Akèy</a>
+        <a href="about-ht.html">Konsènan</a>
+        <a href="projects-ht.html">Pwojè nou yo</a>
+        <a href="projects-map-ht.html" aria-current="page">Kat</a>
+        <a href="roads-ht.html">Wout</a>
+        <a href="get-involved-ht.html">Patisipe</a>
+        <a href="contact-ht.html">Kontak</a>
+      </nav>
+      <details class="language-menu">
+        <summary aria-label="Lang: Kreyòl ayisyen">Kreyòl ayisyen</summary>
+        <div class="language-options">
+          <a href="projects-map.html" hreflang="en" lang="en">English</a>
+          <a href="projects-map-ht.html" hreflang="ht" lang="ht" aria-current="true">Kreyòl ayisyen</a>
+          <a href="projects-map-fr.html" hreflang="fr" lang="fr">Français</a>
+          <a href="index-pt.html" hreflang="pt" lang="pt">Português</a>
+        </div>
+      </details>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <section class="map-intro">
+      <p class="kicker">Labalèn, Ayiti</p>
+      <h1>Kat pwojè yo</h1>
+      <p>Dekouvri Labalèn ak zòn ki ozalantou yo. Chwazi yon kote sou kat la pou w wè detay sou pwojè yo oswa pou w konnen ki kote l ye.</p>
+    </section>
+    <div class="map-layout">
+      <div class="map-browser">
+        <div class="map-toolbar">
+          <nav class="map-places" aria-label="Kote ki sou kat la">
+            <a href="#area-labalen" data-place="labalen">Labalèn</a>
+            <a href="#area-guepe" data-place="guepe">Guêpe</a>
+            <a href="#area-fond" data-place="fond">Fond-des-Blancs</a>
+          </nav>
+          <button type="button" id="map-reset" hidden>Remete kat la jan l te ye a</button>
+        </div>
+        <div id="project-map" aria-label="Labalèn ak kominote ki toupre yo, Ayiti" role="region" hidden></div>
+        <p id="map-fallback" class="map-fallback">Kat la pa disponib. Chwazi yon kote anba a pou w wè detay li yo.</p>
+        <div class="map-legend" id="map-legend" hidden>
+          <span class="map-key map-key-project">Zòn pwojè KPL yo</span>
+          <span class="map-key">Kominote ki toupre</span>
+        </div>
+        <p class="map-sources"><a href="labalen-area.geojson">Done kat la</a> · <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL 1.0</a></p>
+      </div>
+      <div class="map-details" id="map-details">
+        <section class="map-area" id="area-labalen" aria-labelledby="area-labalen-title">
+          <p class="kicker">Zòn pwojè KPL yo</p>
+          <h2 id="area-labalen-title">Labalèn</h2>
+          <p>Pwen sa a montre zòn Labalèn. Nou poko konfime kote egzak pou chak faz travay wout la.</p>
+          <article class="map-project">
+            <figure class="editorial-photo">
+        <img src="nov-25-drainage-work.jpg" alt="Travayè ap fè yon rigòl beton bò wout la." loading="lazy">
+        <figcaption>Faz 1 · Mòn Chamit</figcaption>
+      </figure>
+            <div class="map-project-copy">
+              <h3>Nouvèl sou travay nan Mòn Chamit</h3>
+              <p>Dapre nouvèl novanm 2026 la, pati santral wout Mòn Chamit la, ki mezire 82 mèt, te fin betonnen. Foto yo montre travay sou kote wout la.</p>
+              <a class="text-link" href="roads-ht.html#fieldwork">Gade nouvèl sou teren an</a>
+            </div>
+          </article>
+          <article class="map-project map-project-planned">
+            <div class="map-project-copy">
+              <p class="kicker">Faz 2 · Travay ki prevwa</p>
+              <h3>Plan pou wout toupre lekòl la</h3>
+              <p>KPL prevwa amelyore 150 mèt wout toupre yon lekòl. Bidjè nou prevwa a se 16 000 dola ameriken.</p>
+              <a class="text-link" href="roads-ht.html#school-road">Gade kanpay la</a>
+            </div>
+          </article>
+          <a class="map-reference" href="https://www.geonames.org/3723417/">Referans pou zòn Labalèn</a>
+        </section>
+        <section class="map-area" id="area-guepe" aria-labelledby="area-guepe-title">
+          <p class="kicker">Kominote ki toupre</p>
+          <h2 id="area-guepe-title">Guêpe</h2>
+          <p>Guêpe nan sidès Labalèn. Li sou kat la pou ede w oryante w nan zòn nan.</p>
+          <a class="button forest" href="#area-labalen">Gade pwojè Labalèn yo</a>
+          <a class="map-reference" href="https://www.openstreetmap.org/node/617885459">OpenStreetMap</a>
+        </section>
+        <section class="map-area" id="area-fond" aria-labelledby="area-fond-title">
+          <p class="kicker">Kominote ki toupre</p>
+          <h2 id="area-fond-title">Fond-des-Blancs</h2>
+          <p>Fond-des-Blancs nan nòdès Labalèn. Li sèvi kòm yon referans pou w jwenn wout ou nan zòn nan.</p>
+          <a class="button forest" href="#area-labalen">Gade pwojè Labalèn yo</a>
+          <a class="map-reference" href="https://www.openstreetmap.org/node/617885461">OpenStreetMap</a>
+        </section>
+      </div>
+    </div>
+    <script type="application/json" id="project-map-data">{"places":[{"id":"labalen","name":"Labalèn","point":[18.26667,-73.15],"label":"Zòn pwojè KPL yo"},{"id":"guepe","name":"Guêpe","point":[18.2629465,-73.1323059],"label":"Kominote ki toupre"},{"id":"fond","name":"Fond-des-Blancs","point":[18.2773319,-73.125654],"label":"Kominote ki toupre"}],"zoomIn":"Rale kat la pi pre","zoomOut":"Gade yon zòn pi laj","details":"Gade detay yo"}</script>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <strong>Konbit Pou Labalèn</strong>
+      <p lang="ht">Men anpil, chay pa lou.</p>
+      <a href="contact-ht.html">Kontak</a>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -124,6 +124,7 @@ dialog button { background: var(--white); color: var(--forest); border: 1px soli
 
 .wrap { width: min(1180px, 100% - 48px); }
 .brand img { mix-blend-mode: multiply; }
+.main-nav { flex-wrap: wrap; }
 .main-nav a[aria-current="page"] { text-decoration: underline; text-decoration-color: #b17419; text-decoration-thickness: 2px; text-underline-offset: .42em; }
 .language-menu { position: relative; flex: none; color: var(--forest); }
 .language-menu summary, .involvement summary { cursor: pointer; }

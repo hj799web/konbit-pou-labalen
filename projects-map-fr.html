@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explorez Labalèn et ses environs. Sélectionnez un lieu sur la carte pour découvrir les projets qui y sont présentés ou pour vous repérer dans la région.">
+  <meta name="theme-color" content="#1d3d19">
+  <meta property="og:title" content="Carte des projets · Konbit Pou Labalèn">
+  <meta property="og:description" content="Explorez Labalèn et ses environs. Sélectionnez un lieu sur la carte pour découvrir les projets qui y sont présentés ou pour vous repérer dans la région.">
+  <meta property="og:image" content="https://hj799web.github.io/konbit-pou-labalen/nov-25-bend.jpg">
+  <link rel="alternate" hreflang="en" href="https://hj799web.github.io/konbit-pou-labalen/projects-map.html">
+  <link rel="alternate" hreflang="ht" href="https://hj799web.github.io/konbit-pou-labalen/projects-map-ht.html">
+  <link rel="alternate" hreflang="fr" href="https://hj799web.github.io/konbit-pou-labalen/projects-map-fr.html">
+  <title>Carte des projets · Konbit Pou Labalèn</title>
+  <link rel="stylesheet" href="styles.css?v=project-map">
+  <script defer src="interactions.js"></script>
+  
+  <link rel="stylesheet" href="leaflet-1.9.4.css">
+  <link rel="stylesheet" href="project-map.css">
+  <script defer src="leaflet-1.9.4.js"></script>
+  <script defer src="project-map.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="site-header">
+    <div class="wrap masthead">
+      <a href="index-fr.html" class="brand"><img src="labalen-horizontal.png" alt="Konbit Pou Labalèn" width="2172" height="724"></a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="index-fr.html">Accueil</a>
+        <a href="about-fr.html">À propos</a>
+        <a href="projects-fr.html">Nos projets</a>
+        <a href="projects-map-fr.html" aria-current="page">Carte</a>
+        <a href="roads-fr.html">Routes</a>
+        <a href="get-involved-fr.html">Participer</a>
+        <a href="contact-fr.html">Nous joindre</a>
+      </nav>
+      <details class="language-menu">
+        <summary aria-label="Langue: Français">Français</summary>
+        <div class="language-options">
+          <a href="projects-map.html" hreflang="en" lang="en">English</a>
+          <a href="projects-map-ht.html" hreflang="ht" lang="ht">Kreyòl ayisyen</a>
+          <a href="projects-map-fr.html" hreflang="fr" lang="fr" aria-current="true">Français</a>
+          <a href="index-pt.html" hreflang="pt" lang="pt">Português</a>
+        </div>
+      </details>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <section class="map-intro">
+      <p class="kicker">Labalèn, Haïti</p>
+      <h1>Carte des projets</h1>
+      <p>Explorez Labalèn et ses environs. Sélectionnez un lieu sur la carte pour découvrir les projets qui y sont présentés ou pour vous repérer dans la région.</p>
+    </section>
+    <div class="map-layout">
+      <div class="map-browser">
+        <div class="map-toolbar">
+          <nav class="map-places" aria-label="Lieux sur la carte">
+            <a href="#area-labalen" data-place="labalen">Labalèn</a>
+            <a href="#area-guepe" data-place="guepe">Guêpe</a>
+            <a href="#area-fond" data-place="fond">Fond-des-Blancs</a>
+          </nav>
+          <button type="button" id="map-reset" hidden>Réinitialiser la carte</button>
+        </div>
+        <div id="project-map" aria-label="Labalèn et les localités voisines, Haïti" role="region" hidden></div>
+        <p id="map-fallback" class="map-fallback">La carte est indisponible. Sélectionnez un lieu ci-dessous pour en afficher les détails.</p>
+        <div class="map-legend" id="map-legend" hidden>
+          <span class="map-key map-key-project">Zone des projets de KPL</span>
+          <span class="map-key">Localité voisine</span>
+        </div>
+        <p class="map-sources"><a href="labalen-area.geojson">Données cartographiques</a> · <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL 1.0</a></p>
+      </div>
+      <div class="map-details" id="map-details">
+        <section class="map-area" id="area-labalen" aria-labelledby="area-labalen-title">
+          <p class="kicker">Zone des projets de KPL</p>
+          <h2 id="area-labalen-title">Labalèn</h2>
+          <p>Ce repère situe la zone de Labalèn. L’emplacement précis des deux phases du chantier reste à confirmer.</p>
+          <article class="map-project">
+            <figure class="editorial-photo">
+        <img src="nov-25-drainage-work.jpg" alt="Des travailleurs aménagent une rigole en béton le long de la route." loading="lazy">
+        <figcaption>Phase 1 · Morne Charmit</figcaption>
+      </figure>
+            <div class="map-project-copy">
+              <h3>Journal de terrain de Morne Charmit</h3>
+              <p>Selon le bilan de novembre 2026, la bande centrale de 82 m à Morne Charmit était bétonnée. Le journal de terrain présente les travaux réalisés sur les côtés de la route.</p>
+              <a class="text-link" href="roads-fr.html#fieldwork">Ouvrir le journal de terrain</a>
+            </div>
+          </article>
+          <article class="map-project map-project-planned">
+            <div class="map-project-copy">
+              <p class="kicker">Phase 2 · Travaux prévus</p>
+              <h3>Projet de route près de l’école</h3>
+              <p>KPL prévoit d’améliorer 150 m de route près d’une école. Le budget est estimé à 16 000 $ US.</p>
+              <a class="text-link" href="roads-fr.html#school-road">Découvrir la campagne</a>
+            </div>
+          </article>
+          <a class="map-reference" href="https://www.geonames.org/3723417/">Référence pour la localité de Labalèn</a>
+        </section>
+        <section class="map-area" id="area-guepe" aria-labelledby="area-guepe-title">
+          <p class="kicker">Localité voisine</p>
+          <h2 id="area-guepe-title">Guêpe</h2>
+          <p>Guêpe se trouve au sud-est de Labalèn. Cette localité voisine aide à se repérer sur la carte.</p>
+          <a class="button forest" href="#area-labalen">Voir les projets de Labalèn</a>
+          <a class="map-reference" href="https://www.openstreetmap.org/node/617885459">OpenStreetMap</a>
+        </section>
+        <section class="map-area" id="area-fond" aria-labelledby="area-fond-title">
+          <p class="kicker">Localité voisine</p>
+          <h2 id="area-fond-title">Fond-des-Blancs</h2>
+          <p>Fond-des-Blancs se trouve au nord-est de Labalèn et sert de point de repère pour situer les environs.</p>
+          <a class="button forest" href="#area-labalen">Voir les projets de Labalèn</a>
+          <a class="map-reference" href="https://www.openstreetmap.org/node/617885461">OpenStreetMap</a>
+        </section>
+      </div>
+    </div>
+    <script type="application/json" id="project-map-data">{"places":[{"id":"labalen","name":"Labalèn","point":[18.26667,-73.15],"label":"Zone des projets de KPL"},{"id":"guepe","name":"Guêpe","point":[18.2629465,-73.1323059],"label":"Localité voisine"},{"id":"fond","name":"Fond-des-Blancs","point":[18.2773319,-73.125654],"label":"Localité voisine"}],"zoomIn":"Agrandir la carte","zoomOut":"Réduire le zoom","details":"Voir les détails"}</script>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <strong>Konbit Pou Labalèn</strong>
+      <p lang="ht">Men anpil, chay pa lou.</p>
+      <a href="contact-fr.html">Nous joindre</a>
+    </div>
+  </footer>
+
+</body>
+</html>
