@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ht">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pi bon wout ede timoun ale lekòl, fanmi fè deplasman yo chak jou epi moun nan kominote a transpòte materyèl.">
+  <meta name="theme-color" content="#1d3d19">
+  <meta property="og:title" content="Wout pou Labalèn · Konbit Pou Labalèn">
+  <meta property="og:description" content="Pi bon wout ede timoun ale lekòl, fanmi fè deplasman yo chak jou epi moun nan kominote a transpòte materyèl.">
+  <meta property="og:image" content="https://hj799web.github.io/konbit-pou-labalen/nov-25-bend.jpg">
+  <link rel="alternate" hreflang="en" href="https://hj799web.github.io/konbit-pou-labalen/roads.html">
+  <link rel="alternate" hreflang="ht" href="https://hj799web.github.io/konbit-pou-labalen/roads-ht.html">
+  <link rel="alternate" hreflang="fr" href="https://hj799web.github.io/konbit-pou-labalen/roads-fr.html">
+  <title>Wout pou Labalèn · Konbit Pou Labalèn</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="interactions.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Ale nan kontni an</a>
+  <header class="site-header">
+    <div class="wrap masthead">
+      <a href="index-ht.html" class="brand"><img src="labalen-horizontal.png" alt="Konbit Pou Labalèn" width="2172" height="724"></a>
+      <nav class="main-nav" aria-label="Meni prensipal">
+        <a href="index-ht.html">Akèy</a>
+        <a href="about-ht.html">Konsènan</a>
+        <a href="projects-ht.html">Pwojè nou yo</a>
+        <a href="roads-ht.html" aria-current="page">Wout</a>
+        <a href="get-involved-ht.html">Patisipe</a>
+        <a href="contact-ht.html">Kontak</a>
+      </nav>
+      <details class="language-menu">
+        <summary aria-label="Lang: Kreyòl ayisyen">Kreyòl ayisyen</summary>
+        <div class="language-options">
+          <a href="roads.html" hreflang="en" lang="en">English</a>
+          <a href="roads-ht.html" hreflang="ht" lang="ht" aria-current="true">Kreyòl ayisyen</a>
+          <a href="roads-fr.html" hreflang="fr" lang="fr">Français</a>
+          <a href="index-pt.html" hreflang="pt" lang="pt">Português</a>
+        </div>
+      </details>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <section class="page-intro">
+      <p class="kicker">Pwojè nou yo</p>
+      <h1>Wout pou Labalèn</h1>
+      <p>Pi bon wout ede timoun ale lekòl, fanmi fè deplasman yo chak jou epi moun nan kominote a transpòte materyèl.</p>
+    </section>
+    <nav class="project-links" aria-label="Wout pou Labalèn">
+      <a href="#fieldwork">Faz 1 · Mòn Chamit</a>
+      <a href="#school-road">Faz 2 · Travay ki prevwa</a>
+    </nav>
+    <section class="journal content" id="fieldwork" aria-labelledby="journal-title">
+      <div class="section-intro">
+        <p class="kicker">Faz 1 · Mòn Chamit</p>
+        <h2 id="journal-title">Nouvèl sou teren an</h2>
+        <p>Dapre dènye nouvèl sou pwojè a nan novanm 2026, pati santral wout la, ki mezire 82 mèt longè ak 3 mèt lajè, te fin betonnen. Foto yo montre pati sa a ak travay sou kote wout la.</p>
+        <p>Chwazi yon dat pou wè ki travay ki t ap fèt sou wout la.</p>
+      </div>
+      <div class="date-selector" role="group" aria-label="Dat foto yo" hidden>
+        <button type="button" data-day="0" aria-pressed="false"><time datetime="2026-11-21">21 nov.</time><span>Preparasyon bò wout la</span></button>
+        <button type="button" data-day="1" aria-pressed="false"><time datetime="2026-11-24">24 nov.</time><span>Materyèl ak beton</span></button>
+        <button type="button" data-day="2" aria-pressed="true"><time datetime="2026-11-25">25 nov.</time><span>Travay nan koub la</span></button>
+      </div>
+      <div class="journal-layout">
+        <figure class="photo-story">
+          <a href="nov-25-bend.jpg" id="open-photo" aria-label="Gade foto a an gran">
+            <img id="story-image" src="nov-25-bend.jpg" alt="Ekip la ap travay nan yon koub nan wout la." width="810" height="1080" loading="lazy">
+            <span class="photo-action">Gade foto a an gran</span>
+          </a>
+          <figcaption id="story-caption" aria-live="polite">Ekip la ap travay nan yon koub nan wout la.</figcaption>
+        </figure>
+        <div class="journal-info">
+          <div aria-live="polite">
+            <p id="story-date" class="kicker">25 novanm 2026</p>
+            <h3 id="story-title">Travay nan koub la</h3>
+            <p id="story-summary">Ekip la travay bò pati santral la epi li bay beton sou bò wout la fòm.</p>
+          </div>
+          <div id="thumbnails" class="thumbnails" role="group" aria-label="Foto pou dat ou chwazi a"></div>
+          <span class="photo-count" id="photo-count" aria-live="polite"></span>
+        </div>
+      </div>
+      <script type="application/json" id="journal-data">[{"date":"21 novanm 2026","title":"Preparasyon bò wout la","summary":"Travayè yo netwaye bò pati santral wout la ki deja betonnen.","photos":[{"file":"nov-21-crew.jpg","caption":"Travayè ap netwaye bò wout la."},{"file":"nov-21-shoulder.jpg","caption":"Bò wout la ak pati santral ki betonnen an."}]},{"date":"24 novanm 2026","title":"Preparasyon materyèl ak beton","summary":"Ekip la prepare gravye epi koule beton sou bò wout la.","photos":[{"file":"nov-24-materials.jpg","caption":"Travayè ap prepare gravye bò yon kamyonèt."},{"file":"nov-24-concrete.jpg","caption":"Beton ki fèk koule ant planch yo."}]},{"date":"25 novanm 2026","title":"Travay nan koub la","summary":"Ekip la travay bò pati santral la epi li bay beton sou bò wout la fòm.","photos":[{"file":"nov-25-bend.jpg","caption":"Ekip la ap travay nan yon koub nan wout la."},{"file":"nov-25-roadside.jpg","caption":"Travayè ap bay beton bò wout la fòm."}]}]</script>
+    </section>
+    <section class="next content" id="school-road" aria-labelledby="plan-title">
+      <div>
+        <p class="kicker">Faz 2 · Travay ki prevwa</p>
+        <h2 id="plan-title">Yon pi bon wout pou ale lekòl</h2>
+        <p>Nou prevwa amelyore 150 mèt wout, sitou devan yon lekòl.</p>
+        <p class="donation-pending">Lyen GoFundMe a poko disponib. N ap mete lyen kanpay la isit la lè li disponib.</p>
+      </div>
+      <dl class="budget">
+        <div><dt>Pati wout nou prevwa a</dt><dd>150 m</dd></div>
+        <div><dt>Bidjè nou prevwa</dt><dd>16 000 USD</dd></div>
+      </dl>
+    </section>
+    <section class="content campaign-actions" aria-label="Pataje kanpay la">
+      <a class="button forest" href="get-involved-ht.html">Patisipe</a>
+      <button class="button outline" type="button" id="share" data-copied="Lyen kanpay la kopye." data-manual="Chwazi adrès ki anba a epi kopye l." hidden>Kopye lyen kanpay la</button>
+      <p id="share-status" role="status"></p>
+      <input type="url" id="share-url" aria-label="Kopye lyen kanpay la" readonly hidden>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <strong>Konbit Pou Labalèn</strong>
+      <p lang="ht">Men anpil, chay pa lou.</p>
+      <a href="contact-ht.html">Kontak</a>
+    </div>
+  </footer>
+<dialog id="lightbox" aria-labelledby="lightbox-caption">
+    <div class="lightbox-bar">
+      <span id="lightbox-count"></span>
+      <form method="dialog"><button type="submit" autofocus>Fèmen</button></form>
+    </div>
+    <figure><img id="lightbox-image" alt=""><figcaption id="lightbox-caption" aria-live="polite"></figcaption></figure>
+    <div class="lightbox-nav" id="lightbox-nav" hidden>
+      <button type="button" id="previous-photo">Foto anvan an</button>
+      <button type="button" id="next-photo">Pwochen foto</button>
+    </div>
+  </dialog>
+</body>
+</html>

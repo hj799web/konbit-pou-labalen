@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Un meilleur accès routier facilite le trajet des enfants vers l’école, les déplacements quotidiens des familles et le transport des matériaux.">
+  <meta name="theme-color" content="#1d3d19">
+  <meta property="og:title" content="Des routes pour Labalèn · Konbit Pou Labalèn">
+  <meta property="og:description" content="Un meilleur accès routier facilite le trajet des enfants vers l’école, les déplacements quotidiens des familles et le transport des matériaux.">
+  <meta property="og:image" content="https://hj799web.github.io/konbit-pou-labalen/nov-25-bend.jpg">
+  <link rel="alternate" hreflang="en" href="https://hj799web.github.io/konbit-pou-labalen/roads.html">
+  <link rel="alternate" hreflang="ht" href="https://hj799web.github.io/konbit-pou-labalen/roads-ht.html">
+  <link rel="alternate" hreflang="fr" href="https://hj799web.github.io/konbit-pou-labalen/roads-fr.html">
+  <title>Des routes pour Labalèn · Konbit Pou Labalèn</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="interactions.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <header class="site-header">
+    <div class="wrap masthead">
+      <a href="index-fr.html" class="brand"><img src="labalen-horizontal.png" alt="Konbit Pou Labalèn" width="2172" height="724"></a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="index-fr.html">Accueil</a>
+        <a href="about-fr.html">À propos</a>
+        <a href="projects-fr.html">Nos projets</a>
+        <a href="roads-fr.html" aria-current="page">Routes</a>
+        <a href="get-involved-fr.html">Participer</a>
+        <a href="contact-fr.html">Nous joindre</a>
+      </nav>
+      <details class="language-menu">
+        <summary aria-label="Langue: Français">Français</summary>
+        <div class="language-options">
+          <a href="roads.html" hreflang="en" lang="en">English</a>
+          <a href="roads-ht.html" hreflang="ht" lang="ht">Kreyòl ayisyen</a>
+          <a href="roads-fr.html" hreflang="fr" lang="fr" aria-current="true">Français</a>
+          <a href="index-pt.html" hreflang="pt" lang="pt">Português</a>
+        </div>
+      </details>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <section class="page-intro">
+      <p class="kicker">Nos projets</p>
+      <h1>Des routes pour Labalèn</h1>
+      <p>Un meilleur accès routier facilite le trajet des enfants vers l’école, les déplacements quotidiens des familles et le transport des matériaux.</p>
+    </section>
+    <nav class="project-links" aria-label="Des routes pour Labalèn">
+      <a href="#fieldwork">Phase 1 · Morne Charmit</a>
+      <a href="#school-road">Phase 2 · Travaux prévus</a>
+    </nav>
+    <section class="journal content" id="fieldwork" aria-labelledby="journal-title">
+      <div class="section-intro">
+        <p class="kicker">Phase 1 · Morne Charmit</p>
+        <h2 id="journal-title">Sur le terrain</h2>
+        <p>Selon le bilan de novembre 2026, la bande centrale en béton, longue de 82 mètres et large de 3 mètres, était terminée. Les photos montrent cette bande et les travaux d’accotement.</p>
+        <p>Choisissez une date pour découvrir les travaux de cette journée.</p>
+      </div>
+      <div class="date-selector" role="group" aria-label="Dates des photos" hidden>
+        <button type="button" data-day="0" aria-pressed="false"><time datetime="2026-11-21">21 nov.</time><span>Préparation des abords</span></button>
+        <button type="button" data-day="1" aria-pressed="false"><time datetime="2026-11-24">24 nov.</time><span>Matériaux et béton</span></button>
+        <button type="button" data-day="2" aria-pressed="true"><time datetime="2026-11-25">25 nov.</time><span>Travaux dans le virage</span></button>
+      </div>
+      <div class="journal-layout">
+        <figure class="photo-story">
+          <a href="nov-25-bend.jpg" id="open-photo" aria-label="Agrandir la photo">
+            <img id="story-image" src="nov-25-bend.jpg" alt="L’équipe travaille dans le virage." width="810" height="1080" loading="lazy">
+            <span class="photo-action">Agrandir la photo</span>
+          </a>
+          <figcaption id="story-caption" aria-live="polite">L’équipe travaille dans le virage.</figcaption>
+        </figure>
+        <div class="journal-info">
+          <div aria-live="polite">
+            <p id="story-date" class="kicker">25 novembre 2026</p>
+            <h3 id="story-title">Les travaux dans le virage</h3>
+            <p id="story-summary">L’équipe a travaillé le long de la bande centrale et mis en forme le béton en bordure de route.</p>
+          </div>
+          <div id="thumbnails" class="thumbnails" role="group" aria-label="Photos de la date sélectionnée"></div>
+          <span class="photo-count" id="photo-count" aria-live="polite"></span>
+        </div>
+      </div>
+      <script type="application/json" id="journal-data">[{"date":"21 novembre 2026","title":"Préparer les abords de la route","summary":"L’équipe a dégagé l’accotement le long de la bande centrale bétonnée.","photos":[{"file":"nov-21-crew.jpg","caption":"Des travailleurs dégagent l’accotement."},{"file":"nov-21-shoulder.jpg","caption":"L’accotement longe la bande centrale bétonnée."}]},{"date":"24 novembre 2026","title":"Préparer le gravier et couler le béton","summary":"L’équipe a préparé le gravier et coulé du béton en bordure de route.","photos":[{"file":"nov-24-materials.jpg","caption":"Des travailleurs préparent le gravier près d’une camionnette."},{"file":"nov-24-concrete.jpg","caption":"Béton frais entre les planches de coffrage."}]},{"date":"25 novembre 2026","title":"Les travaux dans le virage","summary":"L’équipe a travaillé le long de la bande centrale et mis en forme le béton en bordure de route.","photos":[{"file":"nov-25-bend.jpg","caption":"L’équipe travaille dans le virage."},{"file":"nov-25-roadside.jpg","caption":"Des travailleurs mettent en forme le béton en bordure de route."}]}]</script>
+    </section>
+    <section class="next content" id="school-road" aria-labelledby="plan-title">
+      <div>
+        <p class="kicker">Phase 2 · Travaux prévus</p>
+        <h2 id="plan-title">Une meilleure route vers l’école</h2>
+        <p>Les travaux prévus couvrent 150 mètres, principalement devant une école.</p>
+        <p class="donation-pending">Le lien GoFundMe est à venir. Nous le publierons ici dès qu’il sera disponible.</p>
+      </div>
+      <dl class="budget">
+        <div><dt>Tronçon prévu</dt><dd>150 m</dd></div>
+        <div><dt>Budget prévisionnel</dt><dd>16 000 $ US</dd></div>
+      </dl>
+    </section>
+    <section class="content campaign-actions" aria-label="Partager la campagne">
+      <a class="button forest" href="get-involved-fr.html">Participer</a>
+      <button class="button outline" type="button" id="share" data-copied="Lien de la campagne copié." data-manual="Sélectionnez et copiez l’adresse ci-dessous." hidden>Copier le lien de la campagne</button>
+      <p id="share-status" role="status"></p>
+      <input type="url" id="share-url" aria-label="Copier le lien de la campagne" readonly hidden>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <strong>Konbit Pou Labalèn</strong>
+      <p lang="ht">Men anpil, chay pa lou.</p>
+      <a href="contact-fr.html">Nous joindre</a>
+    </div>
+  </footer>
+<dialog id="lightbox" aria-labelledby="lightbox-caption">
+    <div class="lightbox-bar">
+      <span id="lightbox-count"></span>
+      <form method="dialog"><button type="submit" autofocus>Fermer</button></form>
+    </div>
+    <figure><img id="lightbox-image" alt=""><figcaption id="lightbox-caption" aria-live="polite"></figcaption></figure>
+    <div class="lightbox-nav" id="lightbox-nav" hidden>
+      <button type="button" id="previous-photo">Photo précédente</button>
+      <button type="button" id="next-photo">Photo suivante</button>
+    </div>
+  </dialog>
+</body>
+</html>
