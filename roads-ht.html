@@ -14,8 +14,10 @@
   <title>Wout pou Labalèn · Konbit Pou Labalèn</title>
   <link rel="stylesheet" href="styles.css?v=202611-photo-journal">
   <script defer src="interactions.js?v=202611-photo-journal"></script>
+  <link rel="stylesheet" href="explorer.css">
+  <script defer src="explorer.js"></script>
 </head>
-<body>
+<body class="editorial-page editorial-roads">
   <a class="skip-link" href="#main">Ale nan kontni an</a>
   <header class="site-header">
     <div class="wrap masthead">
@@ -40,21 +42,30 @@
     </div>
   </header>
   <main id="main" class="wrap">
-    <section class="page-intro">
+    <section class="campaign-opening">
+      <section class="page-intro">
       <p class="kicker">Pwojè nou yo</p>
       <h1>Wout pou Labalèn</h1>
       <p>Pi bon wout ede timoun ale lekòl, fanmi fè deplasman yo chak jou epi moun nan kominote a transpòte materyèl.</p>
     </section>
-    <nav class="road-phases" aria-label="Wout pou Labalèn">
-      <a href="#fieldwork"><span>Faz 1 · Mòn Chamit</span><strong>Nouvèl sou travay nan Mòn Chamit</strong></a>
-      <a href="#school-road"><span>Faz 2 · Travay ki prevwa</span><strong>Plan pou wout toupre lekòl la</strong></a>
-    </nav>
-    <section class="journal content" id="fieldwork" aria-labelledby="journal-title">
+      <figure class="editorial-photo">
+        <img src="nov-25-drainage-work.jpg" alt="Travayè ap fè yon rigòl beton bò wout la." fetchpriority="high">
+        <figcaption>Faz 1 · Mòn Chamit</figcaption>
+      </figure>
+    </section>
+    <div class="phase-explorer" data-tabs data-road-tabs>
+      <nav class="road-phases story-tabs" data-tablist aria-label="Wout pou Labalèn">
+        <a href="#fieldwork" data-panel="road-phase-one"><span>Faz 1 · Mòn Chamit</span><strong>Nouvèl sou travay nan Mòn Chamit</strong></a>
+        <a href="#school-road" data-panel="road-phase-two"><span>Faz 2 · Travay ki prevwa</span><strong>Plan pou wout toupre lekòl la</strong></a>
+      </nav>
+      <div id="road-phase-one">
+        <section class="journal content" id="fieldwork" aria-labelledby="journal-title">
       <div class="section-intro">
         <p class="kicker">Faz 1 · Mòn Chamit</p>
         <h2 id="journal-title">Nouvèl sou teren an</h2>
         <p>Dapre dènye nouvèl sou pwojè a nan novanm 2026, pati santral wout la, ki mezire 82 mèt longè ak 3 mèt lajè, te fin betonnen. Foto yo montre pati sa a ak travay sou kote wout la.</p>
         <p>Chwazi yon dat pou gade foto yo.</p>
+        <a class="text-link" href="#compare-photos">Konpare de foto Mòn Chamit</a>
       </div>
       <div class="date-selector" role="group" aria-label="Dat foto yo" hidden>
         <button type="button" data-day="2026-11-20" aria-pressed="false"><time datetime="2026-11-20">20 nov.</time><span>Travay sou wout la</span></button>
@@ -87,6 +98,26 @@
       <ul class="photo-grid" id="photo-grid" aria-label="Foto pou dat ou chwazi a" hidden></ul>
       <script type="application/json" id="journal-data">[{"id":"2026-11-20","shortDate":"20 nov.","date":"20 novanm 2026","title":"Travay sou wout la","summary":"Foto bò pati ki betonnen an ak sou rebò wout ki poko betonnen an.","photos":[{"file":"nov-20-work-crew.jpg","caption":"Ekip la ap travay sou yon pati wout ki gen anpil wòch."},{"file":"nov-20-road-view.jpg","caption":"Pati ki betonnen an bò yon rebò wout ki gen anpil wòch."},{"file":"nov-20-clearing.jpg","caption":"Travayè yo retire branch ak debri bò wout la."}]},{"id":"2026-11-21","shortDate":"21 nov.","label":"Preparasyon bò wout la","date":"21 novanm 2026","title":"Preparasyon bò wout la","summary":"Travayè yo netwaye bò pati santral wout la ki deja betonnen.","photos":[{"file":"nov-21-crew.jpg","caption":"Travayè ap netwaye bò wout la."},{"file":"nov-21-shoulder.jpg","caption":"Bò wout la ak pati santral ki betonnen an."},{"file":"nov-21-wheelbarrows.jpg","caption":"Ekip la ap travay bò yon bourèt."},{"file":"nov-21-hillside.jpg","caption":"Travayè bò yon pati wout nan solèy la, ak pyebwa sou kote."}]},{"id":"2026-11-24","shortDate":"24 nov.","label":"Materyèl ak beton","date":"24 novanm 2026","title":"Preparasyon materyèl ak beton","summary":"Ekip la prepare gravye epi koule beton sou bò wout la.","photos":[{"file":"nov-24-materials.jpg","caption":"Travayè ap prepare gravye bò yon kamyonèt."},{"file":"nov-24-concrete.jpg","caption":"Beton ki fèk koule ant planch yo."}]},{"id":"2026-11-25","shortDate":"25 nov.","label":"Travay nan koub la","date":"25 novanm 2026","title":"Travay nan koub la","summary":"Ekip la travay bò pati santral la epi li bay beton sou bò wout la fòm.","photos":[{"file":"nov-25-bend.jpg","caption":"Ekip la ap travay nan yon koub nan wout la."},{"file":"nov-25-roadside.jpg","caption":"Travayè ap bay beton bò wout la fòm."},{"file":"nov-25-drainage-work.jpg","caption":"Travayè ap fè yon rigòl beton bò wout la."},{"file":"nov-25-materials.jpg","caption":"Yon kamyonèt ak pil materyèl bò wout la."}]}]</script>
     </section>
+        <section class="road-comparison" id="compare-photos" aria-labelledby="compare-title">
+      <div class="feature-heading" data-reveal>
+        <h2 id="compare-title">Konpare de foto Mòn Chamit</h2>
+        <p id="compare-help">Rale liy ki separe foto yo oswa sèvi ak flèch sou klavye a. Foto sa yo montre premye faz la. Yo te pran yo nan diferan ang 20 ak 25 novanm.</p>
+      </div>
+      <figure class="compare-figure" data-comparison>
+        <div class="compare-images">
+          <img src="nov-20-road-view.jpg" alt="Pati ki betonnen an bò yon rebò wout ki gen anpil wòch." width="810" height="1080" loading="lazy">
+          <img src="nov-25-drainage-work.jpg" alt="Travayè ap fè yon rigòl beton bò wout la." width="810" height="1080" loading="lazy">
+          <div class="compare-divider" aria-hidden="true" hidden><span>↔</span></div>
+          <input type="range" min="0" max="100" value="50" aria-label="Liy ki separe de foto yo" aria-describedby="compare-help" hidden>
+        </div>
+        <figcaption class="compare-captions">
+          <span><time datetime="2026-11-20">20 novanm 2026</time>Pati ki betonnen an bò yon rebò wout ki gen anpil wòch.</span>
+          <span><time datetime="2026-11-25">25 novanm 2026</time>Travayè ap fè yon rigòl beton bò wout la.</span>
+        </figcaption>
+      </figure>
+    </section>
+      </div>
+      <div id="road-phase-two">
     <section class="next content" id="school-road" aria-labelledby="plan-title">
       <div>
         <p class="kicker">Faz 2 · Travay ki prevwa</p>
@@ -99,6 +130,8 @@
         <div><dt>Bidjè nou prevwa</dt><dd>16 000 USD</dd></div>
       </dl>
     </section>
+      </div>
+    </div>
     <section class="content campaign-actions" aria-label="Pataje kanpay la">
       <a class="button forest" href="get-involved-ht.html">Patisipe</a>
       <button class="button outline" type="button" id="share" data-copied="Lyen kanpay la kopye." data-manual="Chwazi adrès ki anba a epi kopye l." hidden>Kopye lyen kanpay la</button>

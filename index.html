@@ -14,8 +14,10 @@
   <title>A hometown we build together. · Konbit Pou Labalèn</title>
   <link rel="stylesheet" href="styles.css?v=202611-photo-journal">
   <script defer src="interactions.js?v=202611-photo-journal"></script>
+  <link rel="stylesheet" href="explorer.css">
+  <script defer src="explorer.js"></script>
 </head>
-<body>
+<body class="editorial-page editorial-home">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap masthead">
@@ -40,81 +42,117 @@
     </div>
   </header>
   <main id="main" class="wrap">
-    <section class="hero home-hero" aria-labelledby="headline">
-      <div class="hero-copy">
-        <p class="kicker">Labalèn, Haiti</p>
-        <h1 id="headline">A hometown we build together.</h1>
-        <p class="lead">Residents and diaspora families are working together to improve daily life in Labalèn, guided by the people who call it home.</p>
-        <a class="button forest" href="about.html">Discover KPL</a>
-      </div>
-      <figure class="hero-photo">
+    <section class="editorial-hero" aria-labelledby="headline">
+      <figure class="editorial-backdrop">
         <img src="nov-21-wheelbarrows.jpg" alt="The crew works beside a wheelbarrow." width="1080" height="810" fetchpriority="high">
         <figcaption>Phase 1 · Morne Charmit · November 21, 2026</figcaption>
       </figure>
-    </section>
-    <section class="content home-stories">
-      <div class="home-about">
-        <p class="kicker">About</p>
-        <h2>Where our families come from</h2>
-        <p>Many families abroad first got to know Labalèn through stories from their parents and grandparents. Konbit Pou Labalèn gives the next generation a way to reconnect and take part.</p>
-        <a class="text-link" href="about.html#roots">Read about Labalèn and KPL</a>
-      </div>
-      <article class="campaign-card">
-      <figure class="editorial-photo">
-        <img src="nov-24-materials.jpg" alt="Workers prepare gravel beside a pickup." loading="lazy">
-        <figcaption>Phase 1 · Morne Charmit</figcaption>
-      </figure>
-      <div class="campaign-copy">
-        <p class="kicker">Current project</p>
-        <h2>Roads for Labalèn</h2>
-        <p>Follow the work at Morne Charmit and see what’s planned near the school.</p>
-        <a class="text-link" href="roads.html">Explore the campaign</a>
-      </div>
-    </article>
-    </section>
-    <section class="content home-field" id="field-photos" aria-labelledby="home-field-title">
-      <div class="strip-heading">
-        <div>
-          <p class="kicker">Phase 1 · Morne Charmit</p>
-          <h2 id="home-field-title">Four days on the road</h2>
-          <p>Swipe or use the controls to explore photos from Morne Charmit.</p>
-        </div>
-        <div class="strip-controls" hidden>
-          <button type="button" data-strip-step="-1" aria-controls="day-strip">Earlier date</button>
-          <button type="button" data-strip-step="1" aria-controls="day-strip">Later date</button>
+      <div class="wrap editorial-opening">
+        <p class="kicker">Labalèn, Haiti</p>
+        <h1 id="headline">A hometown we build together.</h1>
+        <p class="lead">Residents and diaspora families are working together to improve daily life in Labalèn, guided by the people who call it home.</p>
+        <div class="opening-actions">
+          <a class="button gold" href="#explore">Discover KPL</a>
+          <a class="button on-dark" href="#field-photos">Open the field journal</a>
         </div>
       </div>
-      <ul class="day-strip" id="day-strip" aria-label="Browse Phase 1 photos by date">
-        <li><a href="roads.html?day=2026-11-20#fieldwork">
-          <img src="nov-20-road-view.jpg" alt="The concrete strip beside a rocky shoulder." loading="lazy" width="810" height="1080">
-          <span class="day-strip-text"><time datetime="2026-11-20">Nov. 20</time><strong>Work along the road</strong></span>
-        </a></li>
-        <li><a href="roads.html?day=2026-11-21#fieldwork">
-          <img src="nov-21-hillside.jpg" alt="Workers along a sunny stretch of road bordered by trees." loading="lazy" width="810" height="1080">
-          <span class="day-strip-text"><time datetime="2026-11-21">Nov. 21</time><strong>Preparing the roadside</strong></span>
-        </a></li>
-        <li><a href="roads.html?day=2026-11-24#fieldwork">
-          <img src="nov-24-materials.jpg" alt="Workers prepare gravel beside a pickup." loading="lazy" width="810" height="1080">
-          <span class="day-strip-text"><time datetime="2026-11-24">Nov. 24</time><strong>Working with gravel and concrete</strong></span>
-        </a></li>
-        <li><a href="roads.html?day=2026-11-25#fieldwork">
-          <img src="nov-25-drainage-work.jpg" alt="Workers build a concrete channel along the roadside." loading="lazy" width="810" height="1080">
-          <span class="day-strip-text"><time datetime="2026-11-25">Nov. 25</time><strong>Work on the bend</strong></span>
-        </a></li>
-      </ul>
-      <a class="text-link" href="roads.html#fieldwork">Open the field journal</a>
     </section>
-    <section class="content roots">
-      <div class="roots-copy">
-        <p class="kicker">Get Involved</p>
-        <h2>From wherever you call home</h2>
-        <p>If your parents or grandparents come from Labalèn, bring the skills, stories, and connections you already have.</p>
-        <a class="text-link" href="get-involved.html">Get Involved</a>
+    <section class="wrap content home-topics" id="explore" data-tabs aria-labelledby="explore-title">
+      <div class="feature-heading" data-reveal><h2 id="explore-title">Explore KPL</h2></div>
+      <div class="story-tabs topic-tabs" data-tablist aria-label="Explore KPL">
+        <a href="#topic-roots">Our roots</a>
+        <a href="#topic-projects">Our Projects</a>
+        <a href="#topic-involved">Get Involved</a>
       </div>
-      <a class="roots-art" href="labalen-family-roots.png" data-roots aria-label="Open the family-roots artwork">
+      <article class="topic-card" id="topic-roots">
+        <div class="topic-copy">
+          <h3>Where our families come from</h3>
+          <p>Labalèn is home to the people who live there today and part of the family history of many who live abroad. Konbit Pou Labalèn brings those ties into the work of improving daily life in the community.</p>
+          <a class="text-link" href="about.html">Read about Labalèn and KPL</a>
+        </div>
+        <a class="roots-art" href="labalen-family-roots.png" data-roots aria-label="Open the family-roots artwork">
         <img src="labalen-family-roots.png" alt="Tree artwork showing Labalèn family names along its roots" width="1536" height="1024" loading="lazy">
         <span class="photo-action">Open the family-roots artwork</span>
       </a>
+      </article>
+      <article class="topic-card" id="topic-projects">
+        <div class="topic-copy">
+          <h3>Roads for Labalèn</h3>
+          <p>Follow the work at Morne Charmit and see what’s planned near the school.</p>
+          <a class="text-link" href="projects.html">Our Projects</a>
+        </div>
+        <figure class="editorial-photo">
+        <img src="nov-24-materials.jpg" alt="Workers prepare gravel beside a pickup." loading="lazy">
+        <figcaption>Phase 1 · Morne Charmit</figcaption>
+      </figure>
+      </article>
+      <article class="topic-card" id="topic-involved">
+        <div class="topic-copy">
+          <h3>From wherever you call home</h3>
+          <p>If your parents or grandparents come from Labalèn, bring the skills, stories, and connections you already have.</p>
+          <a class="text-link" href="get-involved.html">Get Involved</a>
+        </div>
+        <p class="topic-proverb" lang="ht">Men anpil,<br>chay pa lou.</p>
+      </article>
+    </section>
+    <section class="field-feature" id="field-photos" aria-labelledby="home-field-title">
+      <div class="wrap" data-tabs data-default="last">
+        <div class="feature-heading" data-reveal>
+          <p class="kicker">Phase 1 · Morne Charmit</p>
+          <h2 id="home-field-title">Four days on the road</h2>
+          <p>Select a date to change the photo and read the field notes.</p>
+        </div>
+        <div class="story-tabs field-tabs" data-tablist aria-label="Browse Phase 1 photos by date">
+          <a href="#field-2026-11-20"><time datetime="2026-11-20">Nov. 20</time></a>
+          <a href="#field-2026-11-21"><time datetime="2026-11-21">Nov. 21</time></a>
+          <a href="#field-2026-11-24"><time datetime="2026-11-24">Nov. 24</time></a>
+          <a href="#field-2026-11-25"><time datetime="2026-11-25">Nov. 25</time></a>
+        </div>
+        <article class="field-spread" id="field-2026-11-20">
+            <figure class="editorial-photo">
+        <img src="nov-20-road-view.jpg" alt="The concrete strip beside a rocky shoulder." loading="lazy">
+        <figcaption>November 20, 2026</figcaption>
+      </figure>
+            <div class="spread-copy">
+              <h3>Work along the road</h3>
+              <p>Photos from along the concrete strip and the unpaved shoulder.</p>
+              <a class="button gold" href="roads.html?day=2026-11-20#fieldwork">See all photos from this date</a>
+            </div>
+          </article>
+        <article class="field-spread" id="field-2026-11-21">
+            <figure class="editorial-photo">
+        <img src="nov-21-hillside.jpg" alt="Workers along a sunny stretch of road bordered by trees." loading="lazy">
+        <figcaption>November 21, 2026</figcaption>
+      </figure>
+            <div class="spread-copy">
+              <h3>Preparing the roadside</h3>
+              <p>Workers cleared the shoulder beside the central concrete strip.</p>
+              <a class="button gold" href="roads.html?day=2026-11-21#fieldwork">See all photos from this date</a>
+            </div>
+          </article>
+        <article class="field-spread" id="field-2026-11-24">
+            <figure class="editorial-photo">
+        <img src="nov-24-materials.jpg" alt="Workers prepare gravel beside a pickup." loading="lazy">
+        <figcaption>November 24, 2026</figcaption>
+      </figure>
+            <div class="spread-copy">
+              <h3>Working with gravel and concrete</h3>
+              <p>The team prepared gravel and poured concrete along the roadside.</p>
+              <a class="button gold" href="roads.html?day=2026-11-24#fieldwork">See all photos from this date</a>
+            </div>
+          </article>
+        <article class="field-spread" id="field-2026-11-25">
+            <figure class="editorial-photo">
+        <img src="nov-25-drainage-work.jpg" alt="Workers build a concrete channel along the roadside." loading="lazy">
+        <figcaption>November 25, 2026</figcaption>
+      </figure>
+            <div class="spread-copy">
+              <h3>Work on the bend</h3>
+              <p>The crew worked beside the existing concrete strip and shaped the roadside concrete.</p>
+              <a class="button gold" href="roads.html?day=2026-11-25#fieldwork">See all photos from this date</a>
+            </div>
+          </article>
+      </div>
     </section>
   </main>
   <footer class="site-footer">

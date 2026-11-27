@@ -14,8 +14,10 @@
   <title>Ann bati Labalèn ansanm. · Konbit Pou Labalèn</title>
   <link rel="stylesheet" href="styles.css?v=202611-photo-journal">
   <script defer src="interactions.js?v=202611-photo-journal"></script>
+  <link rel="stylesheet" href="explorer.css">
+  <script defer src="explorer.js"></script>
 </head>
-<body>
+<body class="editorial-page editorial-home">
   <a class="skip-link" href="#main">Ale nan kontni an</a>
   <header class="site-header">
     <div class="wrap masthead">
@@ -40,81 +42,117 @@
     </div>
   </header>
   <main id="main" class="wrap">
-    <section class="hero home-hero" aria-labelledby="headline">
-      <div class="hero-copy">
-        <p class="kicker">Labalèn, Ayiti</p>
-        <h1 id="headline">Ann bati Labalèn ansanm.</h1>
-        <p class="lead">Moun nan kominote a ak fanmi nan dyaspora a mete men ansanm pou amelyore lavi chak jou, dapre priyorite moun k ap viv Labalèn.</p>
-        <a class="button forest" href="about-ht.html">Dekouvri KPL</a>
-      </div>
-      <figure class="hero-photo">
+    <section class="editorial-hero" aria-labelledby="headline">
+      <figure class="editorial-backdrop">
         <img src="nov-21-wheelbarrows.jpg" alt="Ekip la ap travay bò yon bourèt." width="1080" height="810" fetchpriority="high">
         <figcaption>Faz 1 · Mòn Chamit · 21 novanm 2026</figcaption>
       </figure>
-    </section>
-    <section class="content home-stories">
-      <div class="home-about">
-        <p class="kicker">Konsènan</p>
-        <h2>Kote fanmi nou soti</h2>
-        <p>Anpil fanmi aletranje te fè konesans ak Labalèn nan istwa paran ak granparan yo. Konbit Pou Labalèn bay nouvo jenerasyon an yon fason pou l rekonekte ak rasin li epi patisipe.</p>
-        <a class="text-link" href="about-ht.html#roots">Aprann sou Labalèn ak KPL</a>
-      </div>
-      <article class="campaign-card">
-      <figure class="editorial-photo">
-        <img src="nov-24-materials.jpg" alt="Travayè ap prepare gravye bò yon kamyonèt." loading="lazy">
-        <figcaption>Faz 1 · Mòn Chamit</figcaption>
-      </figure>
-      <div class="campaign-copy">
-        <p class="kicker">Pwojè k ap fèt</p>
-        <h2>Wout pou Labalèn</h2>
-        <p>Swiv travay nan Mòn Chamit epi gade sa ki prevwa toupre lekòl la.</p>
-        <a class="text-link" href="roads-ht.html">Gade kanpay la</a>
-      </div>
-    </article>
-    </section>
-    <section class="content home-field" id="field-photos" aria-labelledby="home-field-title">
-      <div class="strip-heading">
-        <div>
-          <p class="kicker">Faz 1 · Mòn Chamit</p>
-          <h2 id="home-field-title">Kat jou travay sou wout la</h2>
-          <p>Glise oswa sèvi ak bouton yo pou gade foto Mòn Chamit yo.</p>
-        </div>
-        <div class="strip-controls" hidden>
-          <button type="button" data-strip-step="-1" aria-controls="day-strip">Dat ki vini anvan an</button>
-          <button type="button" data-strip-step="1" aria-controls="day-strip">Dat ki vini apre a</button>
+      <div class="wrap editorial-opening">
+        <p class="kicker">Labalèn, Ayiti</p>
+        <h1 id="headline">Ann bati Labalèn ansanm.</h1>
+        <p class="lead">Moun nan kominote a ak fanmi nan dyaspora a mete men ansanm pou amelyore lavi chak jou, dapre priyorite moun k ap viv Labalèn.</p>
+        <div class="opening-actions">
+          <a class="button gold" href="#explore">Dekouvri KPL</a>
+          <a class="button on-dark" href="#field-photos">Gade nouvèl sou teren an</a>
         </div>
       </div>
-      <ul class="day-strip" id="day-strip" aria-label="Gade foto premye faz la pa dat">
-        <li><a href="roads-ht.html?day=2026-11-20#fieldwork">
-          <img src="nov-20-road-view.jpg" alt="Pati ki betonnen an bò yon rebò wout ki gen anpil wòch." loading="lazy" width="810" height="1080">
-          <span class="day-strip-text"><time datetime="2026-11-20">20 nov.</time><strong>Travay sou wout la</strong></span>
-        </a></li>
-        <li><a href="roads-ht.html?day=2026-11-21#fieldwork">
-          <img src="nov-21-hillside.jpg" alt="Travayè bò yon pati wout nan solèy la, ak pyebwa sou kote." loading="lazy" width="810" height="1080">
-          <span class="day-strip-text"><time datetime="2026-11-21">21 nov.</time><strong>Preparasyon bò wout la</strong></span>
-        </a></li>
-        <li><a href="roads-ht.html?day=2026-11-24#fieldwork">
-          <img src="nov-24-materials.jpg" alt="Travayè ap prepare gravye bò yon kamyonèt." loading="lazy" width="810" height="1080">
-          <span class="day-strip-text"><time datetime="2026-11-24">24 nov.</time><strong>Preparasyon materyèl ak beton</strong></span>
-        </a></li>
-        <li><a href="roads-ht.html?day=2026-11-25#fieldwork">
-          <img src="nov-25-drainage-work.jpg" alt="Travayè ap fè yon rigòl beton bò wout la." loading="lazy" width="810" height="1080">
-          <span class="day-strip-text"><time datetime="2026-11-25">25 nov.</time><strong>Travay nan koub la</strong></span>
-        </a></li>
-      </ul>
-      <a class="text-link" href="roads-ht.html#fieldwork">Gade nouvèl sou teren an</a>
     </section>
-    <section class="content roots">
-      <div class="roots-copy">
-        <p class="kicker">Patisipe</p>
-        <h2>Ou ka patisipe kèlkeswa kote w ye</h2>
-        <p>Si paran w oswa granparan w soti Labalèn, ou ka pote talan w, istwa fanmi w ak kontak ou genyen deja.</p>
-        <a class="text-link" href="get-involved-ht.html">Patisipe</a>
+    <section class="wrap content home-topics" id="explore" data-tabs aria-labelledby="explore-title">
+      <div class="feature-heading" data-reveal><h2 id="explore-title">Dekouvri KPL</h2></div>
+      <div class="story-tabs topic-tabs" data-tablist aria-label="Dekouvri KPL">
+        <a href="#topic-roots">Rasin nou</a>
+        <a href="#topic-projects">Pwojè nou yo</a>
+        <a href="#topic-involved">Patisipe</a>
       </div>
-      <a class="roots-art" href="labalen-family-roots.png" data-roots aria-label="Gade pyebwa rasin fanmi yo an gran">
+      <article class="topic-card" id="topic-roots">
+        <div class="topic-copy">
+          <h3>Kote fanmi nou soti</h3>
+          <p>Labalèn se lakay moun k ap viv la jodi a. Li fè pati istwa anpil fanmi k ap viv aletranje tou. Konbit Pou Labalèn sèvi ak lyen sa yo pou ede amelyore lavi chak jou nan kominote a.</p>
+          <a class="text-link" href="about-ht.html">Aprann sou Labalèn ak KPL</a>
+        </div>
+        <a class="roots-art" href="labalen-family-roots.png" data-roots aria-label="Gade pyebwa rasin fanmi yo an gran">
         <img src="labalen-family-roots.png" alt="Pyebwa ki gen non fanmi Labalèn sou rasin li" width="1536" height="1024" loading="lazy">
         <span class="photo-action">Gade pyebwa rasin fanmi yo an gran</span>
       </a>
+      </article>
+      <article class="topic-card" id="topic-projects">
+        <div class="topic-copy">
+          <h3>Wout pou Labalèn</h3>
+          <p>Swiv travay nan Mòn Chamit epi gade sa ki prevwa toupre lekòl la.</p>
+          <a class="text-link" href="projects-ht.html">Pwojè nou yo</a>
+        </div>
+        <figure class="editorial-photo">
+        <img src="nov-24-materials.jpg" alt="Travayè ap prepare gravye bò yon kamyonèt." loading="lazy">
+        <figcaption>Faz 1 · Mòn Chamit</figcaption>
+      </figure>
+      </article>
+      <article class="topic-card" id="topic-involved">
+        <div class="topic-copy">
+          <h3>Ou ka patisipe kèlkeswa kote w ye</h3>
+          <p>Si paran w oswa granparan w soti Labalèn, ou ka pote talan w, istwa fanmi w ak kontak ou genyen deja.</p>
+          <a class="text-link" href="get-involved-ht.html">Patisipe</a>
+        </div>
+        <p class="topic-proverb" lang="ht">Men anpil,<br>chay pa lou.</p>
+      </article>
+    </section>
+    <section class="field-feature" id="field-photos" aria-labelledby="home-field-title">
+      <div class="wrap" data-tabs data-default="last">
+        <div class="feature-heading" data-reveal>
+          <p class="kicker">Faz 1 · Mòn Chamit</p>
+          <h2 id="home-field-title">Kat jou travay sou wout la</h2>
+          <p>Chwazi yon dat pou chanje foto a epi li nouvèl travay la.</p>
+        </div>
+        <div class="story-tabs field-tabs" data-tablist aria-label="Gade foto premye faz la pa dat">
+          <a href="#field-2026-11-20"><time datetime="2026-11-20">20 nov.</time></a>
+          <a href="#field-2026-11-21"><time datetime="2026-11-21">21 nov.</time></a>
+          <a href="#field-2026-11-24"><time datetime="2026-11-24">24 nov.</time></a>
+          <a href="#field-2026-11-25"><time datetime="2026-11-25">25 nov.</time></a>
+        </div>
+        <article class="field-spread" id="field-2026-11-20">
+            <figure class="editorial-photo">
+        <img src="nov-20-road-view.jpg" alt="Pati ki betonnen an bò yon rebò wout ki gen anpil wòch." loading="lazy">
+        <figcaption>20 novanm 2026</figcaption>
+      </figure>
+            <div class="spread-copy">
+              <h3>Travay sou wout la</h3>
+              <p>Foto bò pati ki betonnen an ak sou rebò wout ki poko betonnen an.</p>
+              <a class="button gold" href="roads-ht.html?day=2026-11-20#fieldwork">Gade tout foto dat sa a</a>
+            </div>
+          </article>
+        <article class="field-spread" id="field-2026-11-21">
+            <figure class="editorial-photo">
+        <img src="nov-21-hillside.jpg" alt="Travayè bò yon pati wout nan solèy la, ak pyebwa sou kote." loading="lazy">
+        <figcaption>21 novanm 2026</figcaption>
+      </figure>
+            <div class="spread-copy">
+              <h3>Preparasyon bò wout la</h3>
+              <p>Travayè yo netwaye bò pati santral wout la ki deja betonnen.</p>
+              <a class="button gold" href="roads-ht.html?day=2026-11-21#fieldwork">Gade tout foto dat sa a</a>
+            </div>
+          </article>
+        <article class="field-spread" id="field-2026-11-24">
+            <figure class="editorial-photo">
+        <img src="nov-24-materials.jpg" alt="Travayè ap prepare gravye bò yon kamyonèt." loading="lazy">
+        <figcaption>24 novanm 2026</figcaption>
+      </figure>
+            <div class="spread-copy">
+              <h3>Preparasyon materyèl ak beton</h3>
+              <p>Ekip la prepare gravye epi koule beton sou bò wout la.</p>
+              <a class="button gold" href="roads-ht.html?day=2026-11-24#fieldwork">Gade tout foto dat sa a</a>
+            </div>
+          </article>
+        <article class="field-spread" id="field-2026-11-25">
+            <figure class="editorial-photo">
+        <img src="nov-25-drainage-work.jpg" alt="Travayè ap fè yon rigòl beton bò wout la." loading="lazy">
+        <figcaption>25 novanm 2026</figcaption>
+      </figure>
+            <div class="spread-copy">
+              <h3>Travay nan koub la</h3>
+              <p>Ekip la travay bò pati santral la epi li bay beton sou bò wout la fòm.</p>
+              <a class="button gold" href="roads-ht.html?day=2026-11-25#fieldwork">Gade tout foto dat sa a</a>
+            </div>
+          </article>
+      </div>
     </section>
   </main>
   <footer class="site-footer">
